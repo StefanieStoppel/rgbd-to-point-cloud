@@ -1,14 +1,21 @@
 # From RGB-D images to Complete Point Clouds.
+
+![gif-rgb-d-to-pc](https://user-images.githubusercontent.com/1161007/111666659-37186080-8814-11eb-8685-5561bdfdaf08.gif)
+
+
 This repository represents the end-to-end pipeline of our 
 multi-stage RGB-D image to point cloud completion architecture using two deep neural networks.
 It contains the following components:
 - Web Component: RESTful web client for uploading [YCB-Video data set](https://rse-lab.cs.washington.edu/projects/posecnn/)
   frames and specifying the object you want to complete.
-- VSN Component: Contains the Vanilla SegNet model for semantic segmentation and its dependencies.
-- MSN Component: Contains the Morphing and Sampling Network for point cloud completion and its dependencies.
+- VSN Component: Contains the customized Vanilla SegNet model for semantic segmentation and its dependencies.
+- MSN Component: Contains the customized Morphing and Sampling Network for point cloud completion and its dependencies.
 
 Each of the components is containerized using Docker, thus they are all self-contained so
 that no dependencies need to be installed other than Docker the ones listed below in the setup instructions.
+
+Watch this ![video](https://user-images.githubusercontent.com/1161007/111665926-80b47b80-8813-11eb-8607-e98cf8232e54.mp4) to see the GUI in action.
+You can also find more details on the project [here](https://basecamp-demos.informatik.uni-hamburg.de/expo2020/entries/from-depth-images-to-complete-point-clouds/).
 
 ## Setup
 > Beware that you need a GPU to run the pipeline!
@@ -40,3 +47,9 @@ that no dependencies need to be installed other than Docker the ones listed belo
 10. Enjoy the resulting partial and completed point cloud displays directly in the browser. 
 You can zoom in and rotate them within the display windows.
 
+### Component repos
+You can check out the other component repos on [Gitlab](https://gitlab.com/cvp1).
+
+### Original network repos
+- Vanilla Segnet: https://github.com/j96w/DenseFusion
+- Morphing and Sampling Network: https://github.com/Colin97/MSN-Point-Cloud-Completion
