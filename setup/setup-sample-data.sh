@@ -15,11 +15,6 @@ done
 PIPELINE_DIR="$CVP_DIR/pipeline"
 mkdir -p "$PIPELINE_DIR"
 
-# Copy network weights to $PIPELINE_DIR
-MODELS_DIR="$PIPELINE_DIR/models"
-echo "Copying network weights to $MODELS_DIR..."
-cp -r "./models" "$MODELS_DIR"
-
 # Copy point cloud ground truths to $PIPELINE_DIR
 PC_COMPLETE_DIR="$PIPELINE_DIR/pc_complete"
 echo "Copying point cloud ground truths to $PC_COMPLETE_DIR..."

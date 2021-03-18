@@ -18,9 +18,9 @@ mkdir -p "$CVP_DIR"
 
 # Run setup scripts
 echo "******************"
-echo "Setting up repos and data..."
+echo "Setting up repos and sample data..."
 bash ./setup/clone-repos.sh -d "$CVP_DIR"
-bash ./setup/setup-weights-and-data.sh -d "$CVP_DIR"
+bash ./setup/setup-sample-data.sh -d "$CVP_DIR"
 
 # Build component docker images
 echo "******************"
