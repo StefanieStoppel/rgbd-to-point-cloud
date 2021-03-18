@@ -22,6 +22,7 @@ You can also find more details on the project [here](https://basecamp-demos.info
 
 1. Download the [Docker](https://www.docker.com/get-started) client for your OS.
    > If you are on a Linux system, make sure to add your user to the docker group as described [here](https://docs.docker.com/engine/install/linux-postinstall/).
+2. The Morphing and Sampling Network can only be executed on a GPU, hence you will also need [Nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker).
 2. Install [Node.js](https://nodejs.org/en/)
 3. Install [yarn](https://classic.yarnpkg.com/en/docs/install)
 4. Clone this repository locally.
